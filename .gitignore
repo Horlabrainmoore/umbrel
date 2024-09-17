@@ -1,56 +1,18 @@
-# Ignore node_modules anywhere they may be
+# Build and Release Folders
+bin-debug/
+bin-release/
+[Oo]bj/
+[Bb]in/
 
-node_modules
+# Other files and folders
+.settings/
 
-# Ignore all the bash stuff
+# Executables
+*.swf
+*.air
+*.ipa
+*.apk
 
-.bash_history
-.bash_logout
-.bashrc
-.profile
-.ssh
-.viminfo
-.DS_Store
-
-# Python bytecode
-__pycache__
-*.py[cod]
-
-# umbrel-dev
-docker-compose.override.yml
-
-# Files and data directories created by services
-# that we shouldn't accidently commit
-
-*.dat
-*.log
-*.cookie
-*.pid
-*.env
-bitcoin/*
-db/*
-electrs/*
-nginx/*
-events/signals/*
-lnd/*
-logs/*
-statuses/*
-tor/*
-app-data/*
-data/
-
-# Commit these files
-
-!statuses/update-status.json
-
-# Commit these empty directories
-
-!db/.gitkeep
-!events/signals/.gitkeep
-!lnd/.gitkeep
-!logs/.gitkeep
-!tor/data/.gitkeep
-!tor/run/.gitkeep
-.umbrel-dev
-jwt
-./bin
+# Project files, i.e. `.project`, `.actionScriptProperties` and `.flexProperties`
+# should NOT be excluded as they contain compiler settings and other important
+# information for Eclipse / Flash Builder.
